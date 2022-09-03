@@ -81,7 +81,7 @@ button {
 
 .item2-1 {
     grid-column: 1;
-    grid-row: 1;
+    grid-row: 1 ;
 }
 
 .item2-2 {
@@ -98,4 +98,29 @@ button {
     grid-column: 3;
     position: relative;
     right: 50px;
+}
+
+@media(max-width: 900px) {
+    body {
+    flex-direction: column; 
+    }
+    
+    .flexbox-item1 {
+        width: 200px;
+        padding: 10;
+    }
+
+    .flexbox-item2 {
+        width: 250px;
+        padding: 10;
+        position: relative;
+        right: 12px;
+        font-size: 8px;
+        
+    }
+
+    .item2-1 {
+        grid-column: 1 / 3;
+        grid-row: 1 ;
+    }
 }
